@@ -1,0 +1,75 @@
+
+.recipesList
+{
+    &Heading
+    {
+        text-align: right;
+        p
+        {
+            font-size: 10px;
+            color: grey;
+        }
+
+        h1
+        {
+            font-size: 30px;
+        }
+    }
+
+    &Container
+    {
+        display: grid;
+        grid-template-columns: repeat(4,20%);
+        grid-gap: 2%;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    
+    .recipesList
+    {
+        &Container
+        {
+            grid-template-columns: repeat(3,30%);
+            grid-gap: 2%;
+        }
+    }
+}
+
+@media screen and (max-width : 650px) {
+    
+    .recipesList
+    {
+
+        &Heading
+        {
+            text-align: center;
+        }
+
+        &Container
+        {
+            grid-template-columns: repeat(2,45%);
+            grid-gap: 2%;
+        }
+    }
+}
+
+@media screen and (max-width : 450px) {
+    
+    .recipesList
+    {
+
+        &Heading
+        {
+            text-align: center;
+        }
+
+        &Container
+        {
+            grid-template-columns: repeat(1,90%);
+            grid-gap: 2%;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.searchBar
+{
+
+    &Container
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    &Icon
+    {
+        background-color: white;
+        display: inline-block;
+        padding: 5px 7px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    &Text
+    {
+        border: 0;
+        background: #f0f0f0;
+        width: 100%;
+        min-width: 200px;
+        font-family: 'Metrophobic', sans-serif;
+
+        &:focus
+        {
+            outline: none;
+        }
+    }
+}
