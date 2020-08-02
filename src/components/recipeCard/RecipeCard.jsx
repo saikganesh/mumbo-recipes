@@ -10,7 +10,7 @@ const RecipeCard = (props) => {
 
     const [isCardClicked,setCardClick] = useState(false)
 
-    const {recipe : {id,name,image,category,price,description},isOdd} = props
+    const {recipe : {name,image,category,price,description},isOdd} = props
 
     return(
         <div className='recipe'>

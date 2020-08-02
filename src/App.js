@@ -28,7 +28,8 @@ class App extends React.Component
   componentDidMount()
   {
     const {fetchRecipesStart} = this.props
-    fetchRecipesStart()
+    //This function makes the call to fetch the recipes data
+    // fetchRecipesStart()
   }
 }
 

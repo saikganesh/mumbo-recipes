@@ -10,7 +10,6 @@ function* fetchRecipesCallback()
     {
         const response = yield fetch('http://starlord.hackerearth.com/recipe')
         const  data = yield response.json()
-        console.log(data)
         yield put(fetchRecipesSuccess(data))
     }
     catch(error)

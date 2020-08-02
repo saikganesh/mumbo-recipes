@@ -1,7 +1,8 @@
 import recipesTypes from './recipesTypes'
+import recipes from '../../data/recipes'
 
 const initialState = {
-    recipes : [],
+    recipes : recipes,
     loading : false,
     error : '',
 
