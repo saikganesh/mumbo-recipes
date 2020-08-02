@@ -13,15 +13,11 @@ const RecipeCard = (props) => {
     const {recipe : {id,name,image,category,price,description},isOdd} = props
 
     return(
-        <div className='recipe' onClick={() => setCardClick(!isCardClicked)}>
+        <div className='recipe'>
             <div className='recipeFront'>
                 <span className='recipeSideHead'>{category}</span>
-                <div className='recipeImage' style={{
-                    // backgroundImage : `url(${image})`,
-                    // backgroundRepeat : 'no-repeat', 
-                    // bac
-                }}>
-                    <img src={image} alt='recipe'/>
+                <div className='recipeImage'>
+                    <img src={image} alt='recipe' onClick={() => setCardClick(!isCardClicked)}/>
                 </div>
                 <div className='recipeDetails' style={{
                     background: `${isOdd ? 'white' : 'black'}`,
@@ -43,7 +39,7 @@ const RecipeCard = (props) => {
             </div>
             {
                 isCardClicked ? 
-                    <div className="recipeModal">
+                    <div className="recipeModal" onClick={() => setCardClick(!isCardClicked)}>
                         <div className='recipeButtonsContainer'>
                             <button className='recipeButton'>View More</button>
                             <button className='recipeButton'>Quick view</button>
